@@ -1,0 +1,770 @@
+:root {
+    --main-color : #4624af;
+    --main-color-hover : #4624af;
+    --dark-color :#483b71;
+    --text-color :white;
+    --container-width : 1100px;
+}
+
+
+/* box-sizing  border-box */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.3em;
+    padding: 0.5em 1.2em;
+    background-color:var(--main-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 1.1em;
+  }
+  
+  .button:hover {
+    background-color:grey;
+    color:white;
+    transition: all 0.3s;
+  }
+
+ 
+/* HEADER */
+.nav-container {
+  background-color: var(--dark-color);
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+}
+
+.nav-container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.nav-container .logo img {
+  width: 130px;
+  padding-top: 10px;
+}
+
+.nav-container ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.nav-container li a {
+  display: block;
+  color: white;
+  padding: 0 1.5em;
+  text-decoration:none;
+  text-transform: uppercase;
+  height: 60px;
+  line-height: 60px;
+}
+
+.nav-container li a:hover {
+  color: var(--main-color);
+  transition: all 0.3s;
+  border-bottom: 5px solid var(--main-color);
+}
+
+.nav-container header label, #hamburger { 
+  display: none;
+}
+/* END OF HEADER */
+
+/* tabel  */
+.tabel1 {
+  font-family: sans-serif;
+    color: #232323;
+    border-collapse: collapse;
+}
+
+.table1 {
+  border: 1px solid rgb(153, 153, 153);
+  padding: 50px 100px;
+}
+
+/* HERO */
+/* bagian exellent in conecting */
+.hero-container {
+    background-image:url(images/bgg.jpg);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 4em;
+    color: var(--text-color);
+  }
+
+  .hero-text p {
+    font-size: 2em;
+    margin: 0;
+    color: var(--text-color);
+  }
+  /* END OF HERO */
+
+  /* BLOG */
+  /* bagian tabel kotak berjajar 4 diatas */
+.blog-container {
+  max-width: var(--container-width);
+  margin: 3rem auto;
+}
+
+.blog-container header {
+  padding: 0 2em;
+  text-align: center;
+}
+
+.blog-container header hr {
+  width: 25%;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.blog-index1 {
+  display: flex;
+  flex-flow:row;
+  justify-content: first baseline;
+  padding: 50px;
+}
+
+.blog-index1 .snippet {
+  width: 25%;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius:0%;
+}
+
+.blog-index1 .snippet-img {
+  width: 25%;
+  padding-left: 40%;
+  padding-top: 15%;
+}
+
+.blog-index1 .snippet-txt {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.blog-index1 .snippet-txt small {
+  color: #999;
+}
+/* END OF BLOG */
+
+
+/* untuk blog dua wisudawan */
+/* div container  */
+div.container {
+  margin: 0 auto;
+  width: 1000px;
+  height: 415px;
+  border: 2px solid rgb(153, 153, 153);
+  border-radius: 2rem;
+  }
+  
+  /* End Container  */
+  
+   /* SHOWCASE */
+   /* untuk tabel luarnya (container) */
+   .showcase-container:first-line(even) {
+    background-color: #f0f0f0;
+  }
+  
+  .showcase {
+    display: flex;
+    justify-content:space-around;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0px ;
+  }
+  
+  .showcase-image, .showcase-text{
+    width: 70%;
+    margin: 1em;
+  }
+  
+  .showcase-image img{
+    width: 100%;
+    border: 1px solid silver;
+    padding: 0.3rem;
+  }
+  /* END OF SHOWCASE */
+
+  /* untuk bagian sambutan kaprodi */
+  .showcase-container2:first-line(even) {
+    background-color: #f0f0f0;
+  }
+  .showcase2 {
+    display: flex;
+    justify-content:space-around;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px ;
+  }
+  
+  .showcase-text2{
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .showcase-image2 img{
+    width: 70%;
+    padding-left: 40%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+/* untuk laman youtube */
+.hero-container2 {
+  background-image:url(images/arek\ arekk\ bg.jpeg);
+  height: 70vh;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container2 img {
+  width: 25%;
+  padding-left: 40%;
+  padding-top: 15%;
+}
+
+.hero-play {
+  width: 25%;
+}
+
+/* untuk Visi Keilmuan Sistem Informasi */
+.showcase3 {
+  display: flex;
+  justify-content:space-around;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0px ;
+}
+
+.showcase-text{
+  width: 50%;
+  margin: 1em;
+}
+
+.showcase-image3 img{
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 10%;
+}
+
+/* bagian kemitraan */
+.article-container {
+  margin-top: 3rem;
+  color: white;
+  background-color:var(--dark-color);
+  padding: 2rem 1rem;
+}
+
+.article-container hr {
+  color:#2e2a2a;
+}
+
+.article-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.article-container a:hover {
+  text-decoration: underline;
+  color: rgb(151, 151, 151);
+}
+
+.article-menu {
+  width: 80%;
+  margin: 10 auto 1rem;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+.article-menu section {
+  width: 20%;
+}
+
+/* untuk jumlah dosen, mahasiswa, proyek dan penghargaan */
+.hero-container3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), 
+                    rgba(0, 0, 0, 0.3)), url("images/arek\ arekk\ bg.jpeg");
+  height: 70vh;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container3 img {
+  width: 25%;
+  padding-left: 40%;
+  padding-top: 15%;
+}
+
+.article-menu2 {
+  width: 80%;
+  margin: 10%;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-left: 10%;
+}
+
+.article-menu2 section {
+  width: 23%;
+  color: white;
+  font: 25px sans-serif;
+  position: center;
+  text-align: center;
+}
+
+/* bagian apa kata mahasiswa */
+.blog-container2 {
+  max-width: var(--container-width);
+  margin: 3rem auto;
+}
+
+.blog-index2 {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  padding: 0 2%;
+}
+
+.blog-index2 .snippet2 {
+  width: 32%;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.blog-index2 .snippet-img2 {
+  width: 60%;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+
+.blog-index2 .snippet-txt2 {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.blog-index2 .snippet-txt3 {
+  text-align: left;
+}
+.blog-index2 .snippet-txt2 small {
+  color: #999;
+}
+/* END OF BLOG */
+
+/* bagian berita terkini */
+.blog-container3{
+  max-width: var(--container-width);
+  margin: 5rem auto;
+}
+
+.blog-index3 {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  padding: 0 2%;
+}
+
+.blog-index3 .snippet3 {
+  width: 32%;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+
+.blog-index3 .snippet-img3 {
+  width: 100%;
+}
+
+.blog-index3 .snippet-txt2 {
+  padding: 5%;
+  text-align: left;
+
+}
+
+.blog-index3 .snippet-txt2 small {
+  color: #999;
+}
+
+.snippet-txt2 a{
+  text-decoration: none;
+  color: black;
+}
+
+.snippet-txt2 a:hover{
+  text-decoration:none;
+  color: rgb(133, 135, 185);
+}
+
+
+/* FOOTER */
+.footer-container {
+  margin-top: 3rem;
+  color: white;
+  background-color: rgb(88, 88, 88);
+  padding: 2rem 1rem;
+}
+
+.footer-container hr {
+  color:#2e2a2a;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu {
+  max-width: var(--container-width);
+  margin:auto;
+  display: flex;
+  flex-flow:row;
+  justify-content: space-between;
+}
+
+.footer-menu section {
+  width:30%;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-menu h3 {
+  margin-top: 0;
+}
+
+.logo-container img {
+  width: 65px;
+}
+
+.footer-copyright {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.footer-copyright a {
+  margin-left: 0.5rem;
+}
+
+.footer-copyright a:hover {
+  text-decoration: none;
+}
+/* END OF FOOTER */
+
+
+
+
+   /* BREAKPOINT TABLET */
+   @media screen and (max-width: 768px){
+    /* Kode CSS Di Sini */
+
+     /* HEADER */
+     .nav-container header label { 
+      display: inline-block; 
+      color: white;
+      font-style: normal;
+      font-size: 2rem;
+      padding: 0.5rem;
+      padding-left: 1rem;
+    }
+
+    .nav-container header {
+      width: 100%;
+    } 
+
+    .nav-container nav ul {
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .nav-container li a {
+      display: block;
+      color: white;
+      background-color: var(--dark-color);
+      padding: 0 2em;
+      text-decoration: none;
+      text-transform: uppercase;
+      height: auto;
+    }
+
+    .nav-container li a:hover {
+      border-bottom: none;
+    }
+
+    .nav-container .logo {
+      position: absolute;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .nav-container .logo img {
+      width: 80px;
+    }
+
+    .nav-container nav { display: none; }
+
+    .nav-container header input:checked ~ nav { 
+      display: flex; 
+    }
+    /* END OF HEADER */
+
+    /* BLOG */
+/* untuk tabel 4 jajar di atas  */
+    .blog-index1 {
+      display: flex; /* mengubah ke mode flexbox */
+      flex-wrap: wrap; /* mengatur item flexbox dapat diwrap */ 
+      flex-direction: row; /* Mengatur arah item ke row */
+    }
+
+
+    .blog-index1 .snippet {
+        width: 250px;
+        height: 400px;
+        margin:none;
+        box-sizing: border-box;
+        flex-grow:2; /* mengatur setiap item flexbox dapat melebar 1 bagian dari total item*/
+        flex-shrink: 2; /* mengatur setiap item flexbox dapat menciut 1 bagian dari total item*/
+    }
+    
+    .blog-index1 .snippet-img {
+      width: 25%;
+      padding-left: 40%;
+      padding-top: 15%;
+    }
+    
+    .blog-index1 .snippet-txt {
+      padding: 0 1em;
+      text-align: center;
+    }
+    
+    .blog-index1 .snippet-txt small {
+      color: #999;
+    }
+    /* END OF BLOG */
+
+    div.container {
+      margin: 0 auto;
+      width: 1000px;
+      height: 415px;
+      border: 2px solid rgb(153, 153, 153);
+      }
+      
+/* untuk blog dua wisudawan */
+/* div container  */
+div.container {
+  width: 90%;
+  height: fit-content;
+  border: 0.1px solid rgb(153, 153, 153);
+  }
+  /* End Container  */
+  
+   /* SHOWCASE */
+   .showcase-container:first-line(even) {
+    background-color: #f0f0f0;
+  }
+
+  .showcase {
+    flex-direction: column;
+    padding: 1em 2em ;
+  }
+
+  .showcase-image img{
+    width: 100%;
+    margin-left: 20%;
+    padding: 1%;
+    border: 1px solid silver;
+  }
+
+  .showcase-text{
+    text-size-adjust:10;
+    width: 80%;
+    margin-top: 2%;
+    text-align: left;
+  } */
+ 
+  /* END OF SHOWCASE */
+    
+
+/* untuk bagian sambutan kaprodi */
+   /* SHOWCASE */
+   .showcase-container:first-line(even) {
+    background-color: #f0f0f0;
+  }
+
+  .showcase2 {
+    display: contents;
+    padding: 1em 2em ;
+  }
+
+  .showcase-text2 {
+    text-size-adjust:10;
+    width: 80%;
+    margin-top: 2%;
+    text-align: left;
+  }
+
+  .showcase-image2 img{
+    width: 40%;
+    padding-left: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  /* END OF SHOWCASE */
+
+   /* HERO */
+   /* untuk laman youtube  */
+   .hero-container2 img {
+    width: 40%;
+    padding:30%
+   }
+/* END OF HERO */
+
+/* untuk bagian visi keilmuan  */
+.showcase3 {
+  display: contents;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0px ;
+}
+
+.showcase-text{
+  width: 80%;
+  margin: 1em;
+}
+
+.showcase-image3 img{
+  width: 60%;
+  padding-left: 30%;
+  padding-top: 10%;
+}
+
+/* bagian kemitraan  */
+.article-menu {
+  width: 80%;
+  display:contents;
+  justify-content: center;
+}
+
+/* bagia jumllah dosen mahasiswa proyek dan penghargaan  */
+.hero-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-menu2 strong{
+  width: 50%;
+  color: white;
+  font: 25px sans-serif;
+  position: center;
+  text-align: center;
+}
+
+/* untuk bagian apa kata mahasiswa  */
+.blog-index2 .snippet2 {
+  width: auto;
+  margin: 1rem 2rem;
+}
+
+.blog-index2 .snippet-img2 {
+  width: 20%;
+  padding-left: 40%;
+  padding-top: 10%;
+}
+
+/* untuk blog dan berita  */
+.blog-index3 .snippet3 {
+  width: auto;
+  margin: 1rem 2rem;
+}
+
+/* untuk footer  */
+.footer-menu {
+  max-width: var(--container-width);
+  margin:auto;
+  display: flex;
+  flex-flow:row;
+  justify-content: space-between;
+}
+
+.footer-menu section {
+  width:fit-content;
+  padding: 0,5%;
+
+}
+
+.footer-menu ul {
+ display:row;
+}
+
+}
+
